@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM-04-Métodos modernos</title>
     <link rel="stylesheet" href="estilos.css">
-
+</head>
 <body>
     <h3>DOM-04-Métodos modernos</h3>
     <h4>- querySelectorAll</h4>
@@ -35,7 +35,7 @@
 
     <script>
         function pintar() {
-            var x, y, i;
+            let x, y, i;
             //x contiene TODOS los elementos de la clase
             x = document.querySelectorAll(".parrafo");
 
@@ -54,7 +54,7 @@
         }
 
         function pintarAleatorio() {
-            var r, g, b, x, y, i;
+            let r, g, b, x, y, i;
             r = Math.floor(Math.random() * 255);
             g = Math.floor(Math.random() * 255);
             b = Math.floor(Math.random() * 255);

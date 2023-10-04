@@ -18,7 +18,9 @@ function validarEnviar() {
         return;
     }
 
+    // --------------------------------------------------------
     // Validar la edad. Debe ser un entero mayor que 18.
+    // --------------------------------------------------------
     let edad = document.fvalida.edad.value;
 
     edad = validarEntero(edad);
@@ -36,14 +38,38 @@ function validarEnviar() {
         }
     }
 
+    // --------------------------------------------------------
+    // Validar DNI.
+    // --------------------------------------------------------
+    let dni = document.fvalida.dni.value;
+
+    dni = validarEntero(dni);
+    document.fvalida.dni.value = dni;
+
+    if (dni == "") {
+        alert("Tiene que introducir un número de 8 dígitos.");
+        document.fvalida.dni.focus();
+        return;
+    } else {
+        if (dni < 1000000 || dni >99999999) {
+            alert("El nro de DNI debe tener 8 digitos.");
+            document.fvalida.dni.focus();
+            return;
+        }
+    }    
+
+    // --------------------------------------------------------
     // Validar el campo de interés
+    // --------------------------------------------------------
     if (document.fvalida.interes.selectedIndex == 0) {
         alert("Debe seleccionar un motivo de su contacto.");
         document.fvalida.interes.focus();
         return;
     }
 
+    // --------------------------------------------------------
     // Si todas las validaciones pasan, se envía el formulario.
+    // --------------------------------------------------------
     alert("Muchas gracias por enviar el formulario");
     document.fvalida.submit();
 }

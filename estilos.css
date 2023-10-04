@@ -1,9 +1,15 @@
 /* Estilos para los ejemplos de esta clase */
-* {
-    font-family:'Courier New', Courier, monospace;
-    font-size: 12px;
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
 }
 
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
 
 
 .boton, #b1,#b2,#b3,#text {
@@ -16,16 +22,14 @@
     color: #303030;
 }
 
-.boton, #b1 {
-    background-color: coral;
-}
-
-#b2 {
-    background-color: coral;
-}
-
-#b3 {
-    background-color: coral;
+.boton, #b1, #b2, #b3, input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        margin: 4px;
+        cursor: pointer;
+        border-radius: 10px;
 }
 
 .nuevaClase {

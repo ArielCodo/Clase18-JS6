@@ -27,23 +27,23 @@
     <script>
         //.createElement
         function agregarBoton() {
-            var btn = document.createElement("BUTTON");
+            let btn = document.createElement("BUTTON");
             btn.innerHTML = "Haz clic!";
             document.body.appendChild(btn);
         }
 
         //.createElement y .createTextNode
         function agregarTitulo() {
-            var tit = document.createElement("h1");
-            var titContenido = document.createTextNode("Soy un titulo");
+            let tit = document.createElement("h1");
+            let titContenido = document.createTextNode("Soy un titulo");
             tit.appendChild(titContenido);
             document.body.appendChild(tit);
         }
         
         //.cloneNode
         function copiarParrafo() {
-            var itm = document.getElementById("parrafo");
-            var cln = itm.cloneNode(true);
+            let itm = document.getElementById("parrafo");
+            let cln = itm.cloneNode(true);
             document.body.appendChild(cln);
         }
     </script>

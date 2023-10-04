@@ -16,8 +16,8 @@
 
     <!-- Ingreso de datos -------------------------->
     <input type="text" id="text"></input>
-    <input type="button" id="b1" value="Cargar Ejemplo" onclick="cargarejemplo()" ></input>
-    
+    <input type="button" id="b1" value="Cargar Ejemplo" onclick="cargarejemplo()"></input>
+
     <br><br>
     <input type="button" id="b2" value="Calcular" onclick="calcular()"></input>
     <input type="button" id="b3" value="Reiniciar" onclick="reiniciar()">
@@ -39,10 +39,10 @@
         // Proceso los valores existentes en el campo text:
         function calcular() {
             // Separo los elementos en el campo text y los guardo en lista.
-            var lista = document.getElementById("text").value.split(/,/)
+            let lista = document.getElementById("text").value.split(/,/)
 
             // Valores iniciales de los cuatro resultados a mostrar
-            var mayor = -Infinity, menor = +Infinity, suma = 0, media = 0
+            let mayor = -Infinity, menor = +Infinity, suma = 0, media = 0
 
             // Calcula la suma, y busco el maximo y el mínimo:
             for (i = 0; i < lista.length; i++) {
